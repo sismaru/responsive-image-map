@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
       const coords = area.coords.split(',').map(Number);
       const shape = area.shape;
       const href = area.getAttribute('href');
-      const aTag = document.createElement('a');
+      const aTag = document.createElement('a'); 
       aTag.setAttribute('href', href);
       aTag.style.position = 'absolute';
   
