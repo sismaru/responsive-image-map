@@ -4,9 +4,9 @@ window.addEventListener('load', () => {
     const processArea = (area, image, imageRatio) => {
       const coords = area.coords.split(',').map(Number);
       const shape = area.shape;
-      const href = area.href;
+      const href = area.getAttribute('href');
       const aTag = document.createElement('a');
-      aTag.href = href;
+      aTag.setAttribute('href', href);
       aTag.style.position = 'absolute';
   
       const imageWidth = image.width;
