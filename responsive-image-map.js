@@ -7,8 +7,10 @@ window.addEventListener('load', () => {
     const href = area.href;
     const aTag = document.createElement('a');
     
-    // Transfer href attribute
-    if (href) aTag.href = href;
+    // Simply transfer href attribute as-is
+    if (area.hasAttribute('href')) {
+      aTag.href = area.getAttribute('href');
+    }
     
     // Transfer onclick event
     if (area.getAttribute('onclick')) {
